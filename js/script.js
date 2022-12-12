@@ -37,7 +37,9 @@ const emojisList = [
 
 //event listeners
 btnClock.addEventListener('click', onClickBtnClock);
+btnClock.addEventListener('touchstart', onClickBtnClock);
 btnEmojis.addEventListener('click', onClickBtnEmojis);
+btnEmojis.addEventListener('touchstart', onClickBtnEmojis);
 
 document.addEventListener('mousemove', onMouseMove);
 window.onresize = windowResize;
