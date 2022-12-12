@@ -41,6 +41,7 @@ btnEmojis.addEventListener('click', onClickBtnEmojis);
 
 document.addEventListener('mousemove', onMouseMove);
 window.onresize = windowResize;
+window.ontouchmove = onTouchMove;
 
 //global variables
 let centerX = window.innerWidth / 2;
@@ -121,6 +122,10 @@ function randomiseEmojiList() {
       emojisList[Math.floor(Math.random() * emojisList.length)]
     );
   }
+}
+
+function onTouchMove(e) {
+  console.log(e.offsetX);
 }
 
 initCirclePoints();
