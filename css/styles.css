@@ -4,6 +4,7 @@ body {
 
 .clock-number {
   position: fixed;
+  z-index: -1;
   font-size: 12px;
 }
 
