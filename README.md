@@ -2,7 +2,8 @@ INSERT MANDATORY GIF
 
 # Project Title
 
-A useless circle that foolows youre mouse or touch.
+A useless circle that follows youre mouse or touch.
+link: https://the-useless-circle.vercel.app/
 
 # Installation
 
