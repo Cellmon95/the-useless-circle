@@ -74,7 +74,7 @@ function drawCirclePoints(posX, posY, radius, circleType) {
   for (let i = 0; i < circlePoints.length; i++) {
     const radian = (i * 30 * Math.PI) / 180;
     const clockPoint = circlePoints[i];
-    clockPoint.classList.add('clock-number');
+    clockPoint.classList.add('circle-point');
     clockPoint.style.left =
       (Math.cos(radian) * radius + posX).toString() + 'px';
     clockPoint.style.top = (Math.sin(radian) * radius + posY).toString() + 'px';
