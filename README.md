@@ -2,11 +2,11 @@ INSERT MANDATORY GIF
 
 # Project Title
 
-Text about the project. This would also be a great place to link the game on Netlify.
+A useless circle that foolows youre mouse or touch.
 
 # Installation
 
-Add the installation instructions.
+Click the link.
 
 # Code Review
 

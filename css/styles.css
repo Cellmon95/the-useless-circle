@@ -1,6 +1,25 @@
+@font-face {
+  font-family: 'Open Sans';
+  src: local('OpenSans'),
+    /* Get the user's local font if it exists */
+      url('/fonts/OpenSans-Regular.woff') format('woff');
+}
+
+:root {
+  --header-bg-color: #00ba8d;
+  --button-bg-color: #d9d9d9;
+  --button-hover-bg-color: #b1b1b1;
+  --site-font: 'Open Sans';
+}
+
+html {
+  font-size: 62.5%;
+}
+
 body {
   margin: 0;
-  font-size: 24px;
+  font-size: 2.4rem;
+  font-family: var(--site-font);
 }
 
 .circle-point {
@@ -10,44 +29,45 @@ body {
 
 header {
   display: flex;
-  background-color: #00ba8d;
-  padding: 20px 47px;
+  background-color: var(--header-bg-color);
+  padding: 2rem 4.7rem;
   justify-content: center;
-  gap: 20px;
+  gap: 2rem;
 }
 
 button {
-  font-size: 24px;
-  padding: 10px 30px;
-  background-color: #d9d9d9;
+  font-size: 2.4rem;
+  padding: 1rem 3rem;
+  font-family: var(--site-font);
+  background-color: var(--button-bg-color);
   border: none;
-  border-radius: 20px;
+  border-radius: 2rem;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: #b1b1b1;
+  background-color: var(--button-hover-bg-color);
 }
 
 img {
-  width: 150px;
+  width: 15rem;
 }
 
 .picture-section {
   position: fixed;
-  bottom: -10px;
+  bottom: -1rem;
 }
 
 @media screen and (min-width: 800px) {
   body {
-    font-size: 28px;
+    font-size: 2.8rem;
   }
 
   button {
-    font-size: 28px;
+    font-size: 2.8rem;
   }
 
   img {
-    width: 400px;
+    width: 40rem;
   }
 }
