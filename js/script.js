@@ -64,10 +64,7 @@ function windowResize(e) {
 }
 
 function onMouseMove(e) {
-  const distanceX = e.offsetX - centerX;
-  const distanceY = e.offsetY - centerY;
-  const distance = Math.sqrt(Math.pow(distanceX, 2) + Math.pow(distanceY, 2));
-  const radius = distance - 20;
+  const radius = calculateRadius(e.offsetX, e.offsetY);
   drawCirclePoints(centerX, centerY, radius, currentType);
 }
 
@@ -102,6 +99,13 @@ function emojiPointsType(i) {
   return randEmojisClock[i];
 }
 
+function calculateRadius(offsetX, offsetY) {
+  const distanceX = offsetX - centerX;
+  const distanceY = offsetY - centerY;
+  const distance = Math.sqrt(Math.pow(distanceX, 2) + Math.pow(distanceY, 2));
+  return distance - 20;
+}
+
 function onClickBtnClock(e) {
   currentType = type.clock;
 }
@@ -125,7 +129,8 @@ function randomiseEmojiList() {
 }
 
 function onTouchMove(e) {
-  console.log(e.offsetX);
+  const radius = calculateRadius(e.touches[0].clientX, e.touches[0].clientY);
+  drawCirclePoints(centerX, centerY, radius);
 }
 
 initCirclePoints();
