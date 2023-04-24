@@ -21,5 +21,6 @@ Click the link.
 
 Tested by the following people:
 
-1. Jane Doe
-2. John Doe
+1. Tobias Åhlund
+2. Anna Brumark
+3. Styrbjörn Nordberg
